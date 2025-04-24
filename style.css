@@ -1,4 +1,33 @@
 body{
-    background-color: black;
+    background-color:  #1a1a1a;
     color: white;
 }
+
+.navbar-nav .nav-link:hover {
+    color: #0dcaf0 !important; /* Bootstrap's info color */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 6px 12px;
+  }
+
+  .colorbtn:hover {
+    background-color: #0bbbe0 !important;
+    color: white !important;
+    box-shadow: 0 0 10px #0dcaf0;
+  }
+
+.contact-box {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(80, 75, 75);
+    box-shadow: 5px 5px 5px rgb(100, 99, 99);
+  }
+  .form-control {
+    background-color: #1b1a1a;
+    border: 1px solid #615d5d;
+    color: rgb(255, 255, 255);
+  }
+  .form-control::placeholder {
+    color: #aaa;
+  }

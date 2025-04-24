@@ -17,34 +17,32 @@
 <body>
 
     <!-- nav section -->
-    <nav class="navbar navbar-expand-lg bg-black">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #1a1a1a;">
         <div class="container p-4">
             <a class="navbar-brand text-white" href="#">
-                <img src="img/chat.png" alt="Logo" width="40" height="40">
+                <img src="img/logo.png" alt="Logo" width="60" height="60">
             </a>
-
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    
+            <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse">
+    
+            <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link text-white" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="portfolio">Portfolio</a>
+                        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="skill">Skill</a>
+                        <a class="nav-link text-white" href="#skill">Skill</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about">About</a>
+                        <a class="nav-link text-white" href="#skill">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="img/cover.pdf" download class="btn ms-3 bg-info">
+                        <a href="img/jahid-resume.pdf" download class="btn ms-lg-3 bg-info text-black colorbtn">
                             Resume <i class="bi bi-download"></i>
                         </a>
                     </li>
@@ -54,7 +52,7 @@
     </nav>
 
     <!-- banner section -->
-    <div class="bg-black text-white mt-5">
+    <section class="bg-#1a1a1a text-white mt-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
@@ -69,7 +67,7 @@
                         <a href="#" class="me-3"><i class="bi bi-github text-info fs-3"></i></a>
                         <a href="#" class="me-3"><i class="bi bi-linkedin text-info fs-3"></i></a>
                         <a href="#" class="me-3"><i class="bi bi-youtube text-info fs-3"></i></a>
-                        <a href="img/cover.pdf" download class="btn btn-info ms-3">
+                        <a href="img/jahid-resume.pdf" download class="btn btn-info ms-3 colorbtn">
                             Resume <i class="bi bi-download"></i>
                         </a>
                     </div>
@@ -79,20 +77,38 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- portfolio section -->
-
-    <h2 class="text-center mt-5 mb-3 fw-bold">Portfolio</h2>
-
-    <section class="bg-black text-white py-5">
+    <section id="portfolio" class="bg-#1a1a1a text-white py-5">
+        <h2 class="text-center mt-5 mb-3 fw-bold">Portfolio</h2>
         <div class="container border rounded p-3">
             <div class="row mb-4">
                 <div class="col-md-6">
-                    <img src="img/project 1.png" alt="Project Image" class="img-fluid rounded">
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/project 1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/project 2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/project .png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
                 <div class="col-md-6">
-                    <h5 class="text-info">Online University <i class="bi bi-mortarboard"></i> <i
+                    <h5 class="text-info">Daffodil University <i class="bi bi-mortarboard"></i> <i
                             class="bi bi-globe"></i></h5>
                     <p>This "Packages" section of a travel website showcases various travel deals. Each package features
                         a destination (United Kingdom, France, Pakistan, etc.) with an attractive image, a brief
@@ -113,14 +129,23 @@
         </div>
     </section>
 
-    <section class="bg-black text-white py-5">
+    <section class="bg-#1a1a1a text-white py-5">
         <div class="container border rounded p-3">
             <div class="row mb-4">
                 <div class="col-md-6">
-                    <img src="img/project 2.png" alt="Project Image" class="img-fluid rounded">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/project 2.png"  class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/project 1.png"  class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-md-6">
-                    <h5 class="text-info">Online University <i class="bi bi-mortarboard"></i> <i
+                    <h5 class="text-info">Daffodil University <i class="bi bi-mortarboard"></i> <i
                             class="bi bi-globe"></i></h5>
                     <p>This travel website section quickly presents its main "Services" using icons and brief text,
                         covering areas like hotels, food, safety, and different travel types. This allows visitors to
@@ -139,12 +164,105 @@
         </div>
     </section>
 
+    <!-- skill section -->
+    <section id="skill" class="container ">
+        <h2 class="text-center mt-5 mb-3 fw-bold">Skill</h2>
+        <div class="row mb-5 mt-5">
+            <div class="col-md-6">
+                <h2 class="section-title">Expertise:</h2>
+                <div>
+                    <span class="badge bg-secondary">Javascript</span>
+                    <span class="badge bg-secondary">Python</span>
+                    <span class="badge bg-secondary">HTML</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                    <span class="badge bg-secondary">CSS</span>
+                </div>
+
+                <h2 class="section-title mt-4">Comfortable:</h2>
+                <div>
+                    <span class="badge bg-secondary">SQL</span>
+                    <span class="badge bg-secondary">Python</span>
+                    <span class="badge bg-secondary">C</span>
+                    <span class="badge bg-secondary">C++</span>
+                </div>
+
+                <h2 class="section-title mt-4">Familiar:</h2>
+                <div>
+                    <span class="badge bg-secondary">PHP<span>
+                            <span class="badge bg-secondary">React</span>
+                            <span class="badge bg-secondary">Django</span>
+                            <span class="badge bg-secondary">Networking</span>
+                </div>
+
+                <h2 class="section-title mt-4">Tools:</h2>
+                <div>
+                    <span class="badge bg-secondary">VS CODE</span>
+                    <span class="badge bg-secondary">Codeblocks</span>
+                    <span class="badge bg-secondary">Googl Colab</span>
+                    <span class="badge bg-secondary">Git</span>
+                    <span class="badge bg-secondary">Github</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title" style="color: #00bcd4;">My Education</h2>
+                <div>
+                    <p class="mb-0">B.Sc in Computer Science and Engineering,</p>
+                    <p class="mb-0">Daffodil International University (Ashulia, Dhaka, Bangladesh)</p>
+                    <p class="text-secondary mb-0 fw-bold">2021-2025</p>
+                    <img src="img/daffodil_international_university_cover.jpg" width="500" height="300" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- contact info -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Contact with Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 contact-box">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="please type your name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="please type your Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Type here message"></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn bg-dark text-info text-start">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <hr>
+    <footer class="bg-#1a1a1a text-center text-White py-4">
+        <p class="mb-1">Copyright © 2025 | abu saleh jahid</p>
+        <p class="mb-3">Uttara, Dhaka, Bangladesh</p>
+        <div>
+            <a href="#" class="text-info me-2"><i class="bi bi-github"></i></a>
+            <a href="#" class="text-info me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-info"><i class="bi bi-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
 
 
 
-    <!-- java Script -->
-    <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="bootstrap-5.3.5-dist/js/bootstrap.js"></script> -->
+
+
+<!-- java Script -->
+<!-- <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="bootstrap-5.3.5-dist/js/bootstrap.js"></script>
 </body>
 
 </html>
